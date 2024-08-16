@@ -1,11 +1,11 @@
-# import cv2
-# import numpy as np
+import cv2
+import numpy as np
 
-# # Load the video
-# video_path = r'D:\python/video.mp4'  # Use raw string to handle backslashes
-# cap = cv2.VideoCapture(video_path)
-# if not cap.isOpened():
-#     print(f"Error: Unable to open video at {video_path}")
+# Load the video
+video_path = r'D:\python/video.mp4'  # Use raw string to handle backslashes
+cap = cv2.VideoCapture(video_path)
+if not cap.isOpened():
+    print(f"Error: Unable to open video at {video_path}")
 else:
     while cap.isOpened():
         ret, frame = cap.read()
