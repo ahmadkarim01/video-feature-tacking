@@ -9,7 +9,7 @@ if not cap.isOpened():
 else:
     while cap.isOpened():
         ret, frame = cap.read()
-    #     if not ret or frame is None:
+        if not ret or frame is None:
     #         break
     #     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     #     corners = cv2.goodFeaturesToTrack(gray_frame, maxCorners=100, qualityLevel=0.01, minDistance=10)
@@ -22,4 +22,4 @@ else:
     #     if cv2.waitKey(1) & 0xFF == ord('q'):
     #         break
     # cap.release()
-    # cv2.destroyAllWindows()
+    # cv2.desttroyAllWindows()
