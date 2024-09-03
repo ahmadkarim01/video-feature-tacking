@@ -1,5 +1,5 @@
-import cv2
-import numpy as np
+# import cv2
+# import numpy as np
 
 # Load the video
 video_path = r'D:\python/video.mp4'  # Use raw string to handle backslashes
