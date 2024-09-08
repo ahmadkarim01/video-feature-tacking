@@ -15,11 +15,11 @@ else:
         corners = cv2.goodFeaturesToTrack(gray_frame, maxCorners=100, qualityLevel=0.01, minDistance=10)
         if corners is not None:
             corners = np.int32(corners)  # Convert corners to integer
-    #         for corner in corners:
-    #             x, y = corner.ravel()
-    #             cv2.rectangle(frame, (x - 10, y - 10), (x + 10, y + 10), (0, 255, 0), 2)
-    #     cv2.imshow('Frame', frame)
-    #     if cv2.waitKey(1) & 0xFF == ord('q'):
-    #         break
-    # cap.release()
-    # cv2.desttroyAllWindows()
+            for corner in corners:
+                x, y = corner.ravel()
+                cv2.rectangle(frame, (x - 10, y - 10), (x + 10, y + 10), (0, 255, 0), 2)
+        cv2.imshow('Frame', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    cap.release()
+    cv2.desttroyAllWindows()
